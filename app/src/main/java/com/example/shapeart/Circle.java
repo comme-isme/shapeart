@@ -33,5 +33,22 @@ public class Circle extends Diagram {
 
         canvas.drawCircle(cx,cy,CircleSize,paintColor);
     }
+    
+    public boolean IsCircle(Diagram diagram){
+     
+        return true;
+    }
+    
+    public void Bigger(){
+     
+        CircleSize=CircleSize+5;
+        invalidate();
+    }
+    
+    public void smaller(){
+     
+        CircleSize=CircleSize-5;
+        invalidate();
+    }
 
 }
