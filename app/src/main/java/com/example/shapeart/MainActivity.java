@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
     int BackgroundColor= Color.WHITE;
     boolean clear=false;
     MyDraw md;
+    
+    int saveCount=0;
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,18 +81,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void mOnCaptureClick(View v){
-        md.buildDrawingCache();
-        Bitmap captureView = md.getDrawingCache();
-        FileOutputStream fos;
-        try{
-            fos = new FileOutputStream(Environment.getExternalStorageDirectory().toString()+"/capture.jpeg");
-            captureView.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        Toast.makeText(getApplicationContext(), "Captured!", Toast.LENGTH_LONG).show();
     }
 }
