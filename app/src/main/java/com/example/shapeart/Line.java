@@ -24,4 +24,19 @@ public class Line extends Diagram {
      
         return false;
     }
+    
+    public void Bigger(){
+    
+        원의 크기만 조정 가능합니다;
+    }
+    
+    public void Smaller(){
+    
+        원의 크기만 조정 가능합니다;
+    }
+    
+    public void EmptyChange(){
+    
+        원의 색상만 칠할 수 있습니다;
+    }
 }
