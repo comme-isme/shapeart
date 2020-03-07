@@ -45,10 +45,21 @@ public class Circle extends Diagram {
         invalidate();
     }
     
-    public void smaller(){
+    public void Smaller(){
      
         CircleSize=CircleSize-5;
         invalidate();
+    }
+    
+    public void EmptyChange(){
+     
+        if(paintColor.getStyle()==Paint.Style.FILL){
+         
+            paintColor.setStrokeWidth(3f);
+            paintColor.setStyle(Paint.Style.STROKE);
+        }
+        else 
+            paintColor.setStyle(Paint.Style.FIll);
     }
 
 }
