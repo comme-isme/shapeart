@@ -12,4 +12,6 @@ public abstract class Diagram {
     public abstract void Bigger();
     
     public abstract void Smaller();
+    
+    public abstract void EmptyChange();
 }
