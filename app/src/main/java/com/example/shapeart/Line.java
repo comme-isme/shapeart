@@ -19,4 +19,9 @@ public class Line extends Diagram {
     public void DrawDiagram(Canvas canvas){
         canvas.drawLine(sx,sy,ex,ey,paintColor);
     }
+    
+    public boolean IsCircle(Diagram diagram){
+     
+        return false;
+    }
 }
